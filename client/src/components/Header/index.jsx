@@ -11,8 +11,8 @@ import {
 
 const Header = () => {
   return (
-    <header className="bg-primary text-light mb-4 py-3">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+    <header>
+      <div className="nav-container">
         <button type="button" className="menu-button">
           <FontAwesomeIcon className="icon" icon={faBars} />
         </button>
