@@ -3,10 +3,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Home from "./pages/Home/Home.jsx";
-import Account from "./pages/Account.jsx";
-import Closet from "./pages/Closet.jsx";
+import Account from "./pages/Account/Account.jsx";
+import Closet from "./pages/Closet/Closet.jsx";
 import NotFound from "./pages/NotFound";
-import Rent from "./pages/Rent.jsx";
+import Rent from "./pages/Rent/Rent.jsx";
 
 const router = createBrowserRouter([
   {

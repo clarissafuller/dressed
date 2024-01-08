@@ -28,7 +28,7 @@ const Header = () => {
             <p className="m-0">effortless style without commitment</p>
           </Link>
         </div>
-        <Link to="/profile" className="profile-button">
+        <Link to="/account" className="profile-button">
           <FontAwesomeIcon className="icon" icon={faCircleUser} />
         </Link>
         <Link to="/closet" className="closet-button">
