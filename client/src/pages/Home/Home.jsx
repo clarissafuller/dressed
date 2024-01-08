@@ -3,7 +3,8 @@ import { useQuery } from "@apollo/client";
 import { QUERY_MATCHUPS } from "../../utils/queries";
 import "./home.css";
 
-import Header from "../../components/Header/index";
+import Header from "../../components/Header/header.jsx";
+import Footer from "../../components/Footer/footer.jsx";
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_MATCHUPS, {
@@ -22,10 +23,13 @@ const Home = () => {
       </div>
       <div className="large-pic-container">
         <div className="centered-button">
-          <button type="button">NEW ARRIVALS</button>
+          <Link to="/rent" className="new-arrivals-button">
+            NEW ARRIVALS
+          </Link>
         </div>
         <img src={imageUrl} alt="Large Pic" />
       </div>
+      <Footer />
     </>
   );
 };
