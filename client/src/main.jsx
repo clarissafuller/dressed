@@ -3,9 +3,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Home from "./pages/Home/Home.jsx";
-import Matchup from "./pages/Matchup";
-import Vote from "./pages/Vote";
+import Account from "./pages/Account.jsx";
+import Closet from "./pages/Closet.jsx";
 import NotFound from "./pages/NotFound";
+import Rent from "./pages/Rent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +19,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/matchup",
-        element: <Matchup />,
+        path: "/account",
+        element: <Account />,
       },
       {
-        path: "/matchup/:id",
-        element: <Vote />,
+        path: "/closet",
+        element: <Closet />,
+      },
+      {
+        path: "/rent",
+        element: <Rent />,
       },
     ],
   },
