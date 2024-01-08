@@ -28,15 +28,15 @@ const Header = () => {
             <p className="m-0">effortless style without commitment</p>
           </Link>
         </div>
-        <button type="button" className="profile-button">
+        <Link to="/profile" className="profile-button">
           <FontAwesomeIcon className="icon" icon={faCircleUser} />
-        </button>
-        <button type="button" className="closet-button">
+        </Link>
+        <Link to="/closet" className="closet-button">
           <FontAwesomeIcon className="icon" icon={faShirt} />
-        </button>
-        <button type="button" className="order-button">
+        </Link>
+        <Link to="/rent" className="order-button">
           <FontAwesomeIcon className="icon" icon={faBagShopping} />
-        </button>
+        </Link>
       </div>
     </header>
   );
