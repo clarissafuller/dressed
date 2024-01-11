@@ -1,15 +1,25 @@
 const typeDefs = `
-  type Tech {
+  type Account {
     _id: ID!
     name: String!
+    username: String
+    email: Email
+    password: Password
+    phone: String
+    birthday: String
+    height: Float
+    weight: Float
+    sizes: Sizes
   }
 
-  type Matchup {
+  scalar Email
+  scalar Password
+
+  type Review {
     _id: ID!
-    tech1: String!
-    tech2: String!
-    tech1_votes: Int
-    tech2_votes: Int
+    rating: Int
+    details: String
+    date: String
   }
 
   type Query {
